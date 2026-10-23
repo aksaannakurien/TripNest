@@ -1,0 +1,253 @@
+
+.booking-page {
+  min-height: 100vh;
+  padding: 35px 8% 70px;
+  background: #fffdf8;
+  color: #19332d;
+}
+
+.back-button {
+  border: none;
+  background: transparent;
+  color: #17634f;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 25px;
+  padding: 10px 0;
+}
+
+.booking-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  align-items: start;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.booking-card,
+.trip-summary {
+  background: white;
+  border: 1px solid #e8eee7;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.booking-card {
+  padding: 35px;
+}
+
+.booking-eyebrow {
+  color: #279875;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.booking-card h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  margin: 12px 0;
+}
+
+.booking-description {
+  color: #718078;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.booking-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-card label {
+  margin: 16px 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.booking-card input,
+.booking-card select {
+  width: 100%;
+  min-height: 46px;
+  padding: 12px;
+  border: 1px solid #dfe7df;
+  border-radius: 7px;
+  background: #fff;
+  color: #19332d;
+  outline: none;
+}
+
+.booking-card input:focus,
+.booking-card select:focus {
+  border-color: #279875;
+  box-shadow: 0 0 0 3px #27987520;
+}
+
+.booking-submit {
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  padding: 15px;
+  margin-top: 25px;
+  background: #17634f;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.booking-submit:hover {
+  background: #258568;
+}
+
+.trip-summary img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.trip-summary-content {
+  padding: 25px;
+}
+
+.summary-tag {
+  display: inline-block;
+  padding: 7px 11px;
+  background: #e7f4ec;
+  color: #17634f;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.trip-summary h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
+  margin: 15px 0 10px;
+}
+
+.trip-summary-content > p {
+  color: #718078;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.summary-price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 0;
+  margin-top: 20px;
+  border-top: 1px solid #e8eee7;
+}
+
+.summary-price span {
+  font-size: 12px;
+  color: #718078;
+}
+
+.summary-price strong {
+  font-size: 28px;
+  color: #17634f;
+}
+
+.summary-note {
+  font-size: 12px !important;
+}
+
+.success-card {
+  max-width: 600px;
+  margin: 45px auto;
+  text-align: center;
+}
+
+.success-icon {
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #e7f4ec;
+  color: #17634f;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.success-card > p {
+  color: #718078;
+  line-height: 1.7;
+}
+
+.booking-summary {
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 9px;
+  background: #f4f8f2;
+  text-align: left;
+}
+
+.booking-summary p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.booking-summary strong {
+  color: #17634f;
+}
+
+.demo-note {
+  font-size: 12px;
+}
+
+@media (max-width: 760px) {
+  .booking-page {
+    padding: 25px 5% 50px;
+  }
+
+  .booking-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-card {
+    padding: 24px;
+  }
+
+  .booking-card h1 {
+    font-size: 32px;
+  }
+
+  .trip-summary img {
+    height: 220px;
+  }
+}
+
+/* Stronger, clearer text on the booking page */
+.booking-page {
+  color: #183326;
+  font-weight: 500;
+}
+
+.booking-page h1,
+.booking-page h2,
+.booking-page h3,
+.booking-page h4,
+.booking-page label,
+.booking-page button {
+  font-weight: 750;
+}
+
+.booking-page p,
+.booking-page span,
+.booking-page select,
+.booking-page input {
+  font-weight: 500;
+}
+
+.booking-page button {
+  cursor: pointer;
+}
